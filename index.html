@@ -1,0 +1,299 @@
+<html>
+	<head>
+		<title>Noom UserMagic</title>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+
+		<style type="text/css">
+		body {
+			background: #F2F2F2;
+			margin: 0;
+			font-family: 'Roboto';
+			/*font-size: 1.2em;*/
+		}
+		.wrapper {
+			width: 100%;
+			max-width: 1200px;
+			margin: 2em auto;
+		}
+		input {
+			font-size: 1em;
+		}
+		a:visited {
+			color: #447AD4;
+		}
+		h4 {
+			margin: 0;
+			font-weight: normal;
+		}
+		.select2-container {
+			width: 90%;
+			color: #447AD4;
+			/*width: 100% !important;*/
+		}
+		.select2-selection {
+			border-color: #447AD4 !important;
+		}
+		.user .select2-selection {
+			border-color: rgba(0,0,0,0) !important;
+			background: none !important;
+		}
+		.user .select2-selection:hover {
+			border-color: #447AD4 !important;
+		}
+		.user .select2-selection__arrow {
+			display: none !important;
+		}
+		.user .select2-container--open .select2-selection {
+			border-color: #447AD4 !important;
+
+		}
+
+		.select2-selection__rendered {
+			color: #447AD4 !important;
+		}
+		p {
+			margin: 0;
+		}
+		nav img {
+			width: 100%;
+		}
+		.search {
+			padding: 5px 10px;
+    	width: 90%;
+		}
+		.fixed-left {
+			width: 30%;
+		}
+		.flex-right {
+			display: flex;
+			flex-grow: 1;
+			align-items: center;
+		}
+		.filters {
+			display: flex;
+			align-items: center;
+		}	
+		.users {
+			margin: 1em 0;
+		}
+		.users, .filters {
+			flex-direction: row;
+		}
+		.info, .filter {
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+		.users .user {
+			margin: 20px 0 0 0;
+			background: white;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+			display: flex;
+			align-items: center;
+			padding: .75em 0;
+		}
+		.user img {
+			max-width: 50px;
+			border-radius: 999px;
+			margin-left: 20px;
+		}
+		.user .info {
+			flex-align: center;
+			flex-basis: 0;
+		}
+		.profile {
+			vertical-align: baseline;
+		}
+		.profile img {
+			display: inline-block;
+		}
+		.profile .name {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.profile a {
+			margin-left: 7px;
+			font-size: .8em;
+			text-decoration: none;
+		}
+		.name input {
+			font-size: 1.3em;
+			margin-bottom: 3px;
+		}
+		#datepicker, .name input {
+			padding: 3px 7px;
+			border: 1px solid white;
+			border-radius: 2px;
+			color: #447AD4;
+			cursor: pointer;
+		}
+		#datepicker:hover, .name input:hover {
+			border: 1px solid #447AD4;
+		}
+		.info.curriculum p{
+			margin: 3px 7px;
+		}
+		</style>
+
+	</head>
+	<body>
+
+		<nav>
+			<img src="navbar.png" alt="">
+		</nav>
+
+		<div class="wrapper">
+				
+			
+			
+			<div class="filters">
+
+				<div class="fixed-left">
+					<input type="text" placeholder="Search by name..." class="search">
+				</div>
+
+				<div class="flex-right">
+
+					<div class="filter">
+						<select name="curriculum-filter">
+							<option value="">All curriculum</option>
+							<option value="">DPP</option>
+							<option value="">Pre-HTN</option>
+							<option value="">HTN</option>
+							<option value="">HW</option>
+						</select>
+					</div>
+					
+					<div class="filter">
+						<select name="pilot-filter">
+							<option value="">All pilots</option>
+							<option value="">Aetna P1</option>
+							<option value="">Aetna P2</option>
+							<option value="">Aetna P3</option>
+							<option value="">Aetna P4</option>
+							<option value="">Aurora P1</option>
+							<option value="">Aurora P2</option>
+							<option value="">Aurora P3</option>
+							<option value="">Aurora P4</option>
+							<option value="">Kaiser P1</option>
+							<option value="">Kaiser P2</option>
+							<option value="">Kaiser P3</option>
+						</select>
+					</div>
+
+					<div class="filter">
+						<select name="coach-filter">
+							<option value="">All coaches</option>
+							<option value="">Jennifer</option>
+							<option value="">Kypros</option>
+							<option value="">Meghan</option>
+							<option value="">Laura</option>
+						</select>
+					</div>
+
+					<div class="filter">
+						<select name="group-filter">
+							<option value="">All groups</option>
+							<option value="">Aurora 2</option>
+							<option value="">Aurora 3</option>
+							<option value="">Mom group 1</option>
+							<option value="">Mom group 2</option>
+							<option value="">Aetna 1</option>
+							<option value="">Aetna 2</option>
+							<option value="">Aetna 3</option>
+							<option value="">Aetna 4</option>
+							<option value="">Aetna 5</option>
+							<option value="">Aetna 6</option>
+						</select>
+					</div>
+
+				</div>
+				
+			</div>
+
+			<div class="users">
+
+				<div class="user">
+					<div class="fixed-left">
+						<div class="profile">
+							<img src="http://lorempixel.com/200/200/people" alt="">
+							<div class="name">
+								<input type="text" placeholder="Add nickname" value="Logan Merriam" style="display: block">
+								<a href="">View profile</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-right">
+						<div class="info curriculum">
+							<select name="coach-info">
+								<option value="">DPP</option>
+								<option value="">Pre-HTN</option>
+								<option value="">HTN</option>
+								<option value="">HW</option>
+							</select>
+
+							<input type="text" id="datepicker" value="04/01/2016">
+							<p>Week 4</p>
+						</div>
+						<div class="info pilot">
+							<select name="coach-info">
+								<option value="">Aetna P1</option>
+								<option value="">Aetna P2</option>
+								<option value="">Aetna P3</option>
+								<option value="">Aetna P4</option>
+								<option value="">Aurora P1</option>
+								<option value="">Aurora P2</option>
+								<option value="">Aurora P3</option>
+								<option value="">Aurora P4</option>
+								<option value="">Kaiser P1</option>
+								<option value="">Kaiser P2</option>
+								<option value="">Kaiser P3</option>
+							</select>
+						</div>
+						<div class="info coach">
+							<select name="coach-info">
+								<option value="">Jennifer</option>
+								<option value="">Kypros</option>
+								<option value="">Meghan</option>
+								<option value="">Laura</option>
+							</select>
+						</div>
+						<div class="info group">
+							<select name="coach-info">
+								<option value="">Aurora 2</option>
+								<option value="">Aurora 3</option>
+								<option value="">Mom group 1</option>
+								<option value="">Mom group 2</option>
+								<option value="">Aetna 1</option>
+								<option value="">Aetna 2</option>
+								<option value="">Aetna 3</option>
+								<option value="">Aetna 4</option>
+								<option value="">Aetna 5</option>
+								<option value="">Aetna 6</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	<script type="text/javascript">
+	  $('select').select2({
+	  	width: 'Style'
+	  });
+
+	  $(function() {
+	    $( "#datepicker" ).datepicker();
+	  });
+	</script>
+	</body>
+</html>
