@@ -90,9 +90,9 @@
 			flex-basis: 0;
 		}
 		.users .user {
-			margin: 20px 0 0 0;
+			margin: 10px 0 0 0;
 			background: white;
-			box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+			box-shadow: 0 5px 8px rgba(0,0,0,0.1);
 			display: flex;
 			align-items: center;
 			padding: .75em 0;
@@ -125,14 +125,14 @@
 			font-size: 1.3em;
 			margin-bottom: 3px;
 		}
-		#datepicker, .name input {
+		.datepicker, .name input {
 			padding: 3px 7px;
 			border: 1px solid white;
-			border-radius: 2px;
+			border-radius: 3px;
 			color: #447AD4;
 			cursor: pointer;
 		}
-		#datepicker:hover, .name input:hover {
+		.datepicker:hover, .name input:hover {
 			border: 1px solid #447AD4;
 		}
 		.info.curriculum p{
@@ -221,14 +221,76 @@
 				<div class="user">
 					<div class="fixed-left">
 						<div class="profile">
-							<img src="http://lorempixel.com/200/200/people" alt="">
+							<img src="https://placeimg.com/200/200/people" alt="">
 							<div class="name">
 								<input type="text" placeholder="Add nickname" value="Logan Merriam" style="display: block">
 								<a href="">View profile</a>
 							</div>
 						</div>
 					</div>
+					<div class="flex-right">
+						<div class="info curriculum">
+							<select name="coach-info">
+								<option value="">Pre-HTN</option>
+								<option value="">DPP</option>
+								<option value="">HTN</option>
+								<option value="">HW</option>
+							</select>
+							<input type="text" class="datepicker" value="04/01/2016">
+							<p>Week 2</p>
+						</div>
+						<div class="info pilot">
+							<select name="coach-info">
+								<option value="">Aurora P2</option>
+								<option value="">Aetna P1</option>
+								<option value="">Aetna P2</option>
+								<option value="">Aetna P3</option>
+								<option value="">Aetna P4</option>
+								<option value="">Aurora P1</option>
+								<option value="">Aurora P3</option>
+								<option value="">Aurora P4</option>
+								<option value="">Kaiser P1</option>
+								<option value="">Kaiser P2</option>
+								<option value="">Kaiser P3</option>
+							</select>
+						</div>
+						<div class="info coach">
+							<select name="coach-info">
+								<option value="">Kypros</option>
+								<option value="">Jennifer</option>
+								<option value="">Meghan</option>
+								<option value="">Laura</option>
+							</select>
+						</div>
+						<div class="info group">
+							<select name="coach-info">
+								<option value="">Aurora 3</option>
+								<option value="">Aurora 2</option>
+								<option value="">Mom group 1</option>
+								<option value="">Mom group 2</option>
+								<option value="">Aetna 1</option>
+								<option value="">Aetna 2</option>
+								<option value="">Aetna 3</option>
+								<option value="">Aetna 4</option>
+								<option value="">Aetna 5</option>
+								<option value="">Aetna 6</option>
+							</select>
+						</div>
+					</div>
+				</div>
 
+
+
+				<div class="user">
+					<div class="fixed-left">
+						<div class="profile">
+							<img src="https://placeimg.com/201/201/people" alt="">
+							<div class="name">
+								<input type="text" placeholder="Add nickname" value="Meghan Yabsley" style="display: block">
+								<a href="">View profile</a>
+							</div>
+						</div>
+					</div>
 					<div class="flex-right">
 						<div class="info curriculum">
 							<select name="coach-info">
@@ -237,9 +299,134 @@
 								<option value="">HTN</option>
 								<option value="">HW</option>
 							</select>
+							<input type="text" class="datepicker" value="04/01/2016">
+							<p>Week 2</p>
+						</div>
+						<div class="info pilot">
+							<select name="coach-info">
+								<option value="">Kaiser P1</option>
+								<option value="">Aetna P1</option>
+								<option value="">Aetna P2</option>
+								<option value="">Aetna P3</option>
+								<option value="">Aetna P4</option>
+								<option value="">Aurora P1</option>
+								<option value="">Aurora P2</option>
+								<option value="">Aurora P3</option>
+								<option value="">Aurora P4</option>
+								<option value="">Kaiser P2</option>
+								<option value="">Kaiser P3</option>
+							</select>
+						</div>
+						<div class="info coach">
+							<select name="coach-info">
+								<option value="">Jennifer</option>
+								<option value="">Kypros</option>
+								<option value="">Meghan</option>
+								<option value="">Laura</option>
+							</select>
+						</div>
+						<div class="info group">
+							<select name="coach-info">
+								<option value="">Mom group 1</option>
+								<option value="">Aurora 2</option>
+								<option value="">Aurora 3</option>
+								<option value="">Mom group 2</option>
+								<option value="">Aetna 1</option>
+								<option value="">Aetna 2</option>
+								<option value="">Aetna 3</option>
+								<option value="">Aetna 4</option>
+								<option value="">Aetna 5</option>
+								<option value="">Aetna 6</option>
+							</select>
+						</div>
+					</div>
+				</div>
 
-							<input type="text" id="datepicker" value="04/01/2016">
+
+
+				<div class="user">
+					<div class="fixed-left">
+						<div class="profile">
+							<img src="https://placeimg.com/202/202/people" alt="">
+							<div class="name">
+								<input type="text" placeholder="Add nickname" value="Christina Coviello" style="display: block">
+								<a href="">View profile</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex-right">
+						<div class="info curriculum">
+							<select name="coach-info">
+								<option value="">HTN</option>
+								<option value="">DPP</option>
+								<option value="">Pre-HTN</option>
+								<option value="">HW</option>
+							</select>
+							<input type="text" class="datepicker" value="04/01/2016">
 							<p>Week 4</p>
+						</div>
+						<div class="info pilot">
+							<select name="coach-info">
+								<option value="">Aetna P1</option>
+								<option value="">Aetna P2</option>
+								<option value="">Aetna P3</option>
+								<option value="">Aetna P4</option>
+								<option value="">Aurora P1</option>
+								<option value="">Aurora P2</option>
+								<option value="">Aurora P3</option>
+								<option value="">Aurora P4</option>
+								<option value="">Kaiser P1</option>
+								<option value="">Kaiser P2</option>
+								<option value="">Kaiser P3</option>
+							</select>
+						</div>
+						<div class="info coach">
+							<select name="coach-info">
+							<option value="">Laura</option>
+								<option value="">Jennifer</option>
+								<option value="">Kypros</option>
+								<option value="">Meghan</option>
+							</select>
+						</div>
+						<div class="info group">
+							<select name="coach-info">
+								<option value="">Aetna 5</option>
+								<option value="">Aurora 2</option>
+								<option value="">Aurora 3</option>
+								<option value="">Mom group 1</option>
+								<option value="">Mom group 2</option>
+								<option value="">Aetna 1</option>
+								<option value="">Aetna 2</option>
+								<option value="">Aetna 3</option>
+								<option value="">Aetna 4</option>
+								<option value="">Aetna 6</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="user">
+					<div class="fixed-left">
+						<div class="profile">
+							<img src="https://placeimg.com/203/203/people" alt="">
+							<div class="name">
+								<input type="text" placeholder="Add nickname" value="Corin Pascual" style="display: block">
+								<a href="">View profile</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex-right">
+						<div class="info curriculum">
+							<select name="coach-info">
+								<option value="">DPP</option>
+								<option value="">Pre-HTN</option>
+								<option value="">HTN</option>
+								<option value="">HW</option>
+							</select>
+							<input type="text" class="datepicker" value="04/01/2016">
+							<p>Week 7</p>
 						</div>
 						<div class="info pilot">
 							<select name="coach-info">
@@ -279,7 +466,6 @@
 							</select>
 						</div>
 					</div>
-
 				</div>
 
 			</div>
@@ -292,7 +478,7 @@
 	  });
 
 	  $(function() {
-	    $( "#datepicker" ).datepicker();
+	    $( ".datepicker" ).datepicker();
 	  });
 	</script>
 	</body>
